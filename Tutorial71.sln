@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial71", "Tutorial71\Tutorial71.csproj", "{D3677FA0-6E61-450C-9E62-D966EF7B8D43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CucumberTests", "CucumberTests\CucumberTests.csproj", "{F2486809-D6C0-4285-9FAA-E1E9E88A0676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D3677FA0-6E61-450C-9E62-D966EF7B8D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3677FA0-6E61-450C-9E62-D966EF7B8D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3677FA0-6E61-450C-9E62-D966EF7B8D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2486809-D6C0-4285-9FAA-E1E9E88A0676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2486809-D6C0-4285-9FAA-E1E9E88A0676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2486809-D6C0-4285-9FAA-E1E9E88A0676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2486809-D6C0-4285-9FAA-E1E9E88A0676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

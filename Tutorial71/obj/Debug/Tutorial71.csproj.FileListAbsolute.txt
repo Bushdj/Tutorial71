@@ -1,1 +1,6 @@
 c:\users\bushdj\documents\visual studio 2015\Projects\Tutorial71\Tutorial71\bin\Debug\Tutorial71.exe.config
+C:\Users\bushdj\documents\visual studio 2015\Projects\Tutorial71\Tutorial71\bin\Debug\Tutorial71.exe
+C:\Users\bushdj\documents\visual studio 2015\Projects\Tutorial71\Tutorial71\bin\Debug\Tutorial71.pdb
+C:\Users\bushdj\documents\visual studio 2015\Projects\Tutorial71\Tutorial71\obj\Debug\Tutorial71.csprojResolveAssemblyReference.cache
+C:\Users\bushdj\documents\visual studio 2015\Projects\Tutorial71\Tutorial71\obj\Debug\Tutorial71.exe
+C:\Users\bushdj\documents\visual studio 2015\Projects\Tutorial71\Tutorial71\obj\Debug\Tutorial71.pdb

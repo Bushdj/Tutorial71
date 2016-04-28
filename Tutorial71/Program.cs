@@ -10,6 +10,7 @@ namespace Tutorial71
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
