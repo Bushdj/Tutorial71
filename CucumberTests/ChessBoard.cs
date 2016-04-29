@@ -23,6 +23,12 @@ namespace CucumberTests
         {
             Pawn p = board[x1];
             board.Remove(x1);
+            if(board[x2] != null)
+            {
+                Pawn capd = board[x2];
+                capd.capture();
+                board.Remove(x2);
+            }
             board.Add(x2, p);
         }
 
