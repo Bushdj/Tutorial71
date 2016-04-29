@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CucumberTests
 {
-    internal class ChessBoard
+    public class ChessBoard
     {
         System.Collections.Generic.Dictionary<Tuple<char,int>, Pawn> board = new Dictionary<Tuple<char,int>, Pawn>();
         public ChessBoard()

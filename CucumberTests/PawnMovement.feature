@@ -8,4 +8,4 @@ Scenario: One space forward
 Given that I have an empty chessboard
 And I have a white pawn at a2
 When I try to move the white pawn from a2 to a3
-Then the white pawn is placed in a3.
+Then the white pawn is placed in a3

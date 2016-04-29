@@ -18,20 +18,19 @@ namespace CucumberTests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class PawnMovementFeature
+    public partial class PawnCaptureFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "PawnMovement.feature"
+#line 1 "PawnCapture.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PawnMovement", "\tAs a player,\r\n\tI want to be able to move my pawn one space forward,\r\n\tor two spa" +
-                    "ces forward when the pawn has not moved.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PawnCapture", "As a player, I want my pawns to capture pieces.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -46,9 +45,9 @@ namespace CucumberTests
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "PawnMovement")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "PawnCapture")))
             {
-                CucumberTests.PawnMovementFeature.FeatureSetup(null);
+                CucumberTests.PawnCaptureFeature.FeatureSetup(null);
             }
         }
         
@@ -69,25 +68,29 @@ namespace CucumberTests
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("One space forward")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "PawnMovement")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("movement")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Capture a black pawn")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "PawnCapture")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("pawn")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("happypath")]
-        public virtual void OneSpaceForward()
+        public virtual void CaptureABlackPawn()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("One space forward", new string[] {
-                        "movement",
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Capture a black pawn", new string[] {
+                        "pawn",
                         "happypath"});
-#line 7
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 6
 testRunner.Given("that I have an empty chessboard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 7
+testRunner.And("I have a white pawn at d4", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 8
+testRunner.And("I have a black pawn at e5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
-testRunner.And("I have a white pawn at a2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.When("I try to move the white pawn from d4 to e5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
-testRunner.When("I try to move the white pawn from a2 to a3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Then("the white pawn is placed in e5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 11
-testRunner.Then("the white pawn is placed in a3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.And("the black pawn is captured", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
